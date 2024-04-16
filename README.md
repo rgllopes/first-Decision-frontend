@@ -14,6 +14,10 @@ Mensagens customizadas do frontend e recebidas do backend
 ## Configuraçcão da url backend
 No arquivo src/environments/environments.ts esta localizada a variável `apiUrl` onde se deve revisar o endpoint de comunicação com a api.
 <br>
+O link do projeto da api é:
+<br>
+(https://github.com/rgllopes/first-decision-backend)
+
 
 ## Servidor de desenvolvimento
 
