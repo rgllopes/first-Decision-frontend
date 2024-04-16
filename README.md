@@ -7,7 +7,7 @@ Este projeto for gerado na versão Angular 12.2.18
 ## Tecnologias utilizadas
 Reactive forms
 <br>
-Validaçcão de formulário
+Validação de formulário
 <br>
 Mensagens customizadas do frontend e recebidas do backend
 
