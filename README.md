@@ -12,7 +12,7 @@ Validaçcão de formulário
 Mensagens customizadas do frontend e do backend
 
 ## Configuraçcão da url backend
-No arquivo src/environments/environments.ts esta localizada a variável `**apiUrl**` onde se deve revisar o endpoint de comunicação com a api.
+No arquivo src/environments/environments.ts esta localizada a variável `apiUrl` onde se deve revisar o endpoint de comunicação com a api.
 <br>
 
 ## Servidor de desenvolvimento
