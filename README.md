@@ -1,6 +1,6 @@
 
 # Firts-Decision
-Desafio técnico fullstack Spring Boot
+Desafio técnico fullstack
 <br>
 Este projeto for gerado na versão Angular 12.2.18
 
