@@ -2,14 +2,14 @@
 # Firts-Decision
 Desafio técnico fullstack Spring Boot
 <br>
-Este projeto for gerando na versão Angular 12.2.18
+Este projeto for gerado na versão Angular 12.2.18
 
 ## Tecnologias utilizadas
 Reactive forms
 <br>
 Validaçcão de formulário
 <br>
-Mensagens customizadas do frontend e do backend
+Mensagens customizadas do frontend e recebidas do backend
 
 ## Configuraçcão da url backend
 No arquivo src/environments/environments.ts esta localizada a variável `apiUrl` onde se deve revisar o endpoint de comunicação com a api.
