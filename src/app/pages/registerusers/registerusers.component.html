@@ -1,0 +1,71 @@
+<div class="container d-flex justify-content-center">
+  <div class="col-4">
+    <div class="card shadow round mt-5">
+      <div class="card-header">
+        <h3 class="text-center">Cadastro de Usuário</h3>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="registerUserForm" >
+          <div class="mb-3">
+            <label class="form-label">Nome do Usuário</label>
+            <input
+              type="text"
+              placeholder="Nome do usuário"
+              formControlName="userName"
+              class="form-control"
+              maxlength="50"
+              required
+            />
+            <div *ngIf="userName?.invalid && (userName?.touched)" class="form-text text-danger">
+              <div *ngIf="userName?.errors?.['required']">Campo obrigatório</div>
+              <div *ngIf="userName?.errors?.['minlength']">Nome deve conter ao menos 3 caracters</div>
+              <div *ngIf="userName?.errors?.['maxlength']">Nome deve conter máximo 50 caracters</div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">E-mail</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="email"
+              placeholder="E-mail"
+            >
+            <div *ngIf="email?.invalid && (email?.touched)" class="form-text text-danger">
+              <div *ngIf="email?.errors?.['required']">Campo obrigatório</div>
+              <div *ngIf="email?.errors?.['email']">Deve conter um email válido</div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Senha</label>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Senha"
+              formControlName="password"
+            >
+            <div *ngIf="password?.invalid && (password?.touched)" class="form-text text-danger">
+              <div *ngIf="password?.errors?.['required']">Campo obrigatório</div>
+              <div *ngIf="password?.errors?.['minlength']">Nome deve conter ao menos 6 caracters</div>
+              <div *ngIf="password?.errors?.['maxlength']">Nome deve conter máximo 20 caracters</div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Confirmar senha</label>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Confirmar Senha"
+              formControlName="confirmPassword"
+            >
+            <div *ngIf="confirmPassword?.invalid && (confirmPassword?.touched) || confirmPassword?.dirty" class="form-text text-danger">
+              <div *ngIf="registerUserForm?.errors?.['passwordMismatchError']">Senhas não coincidem</div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary" (click)="onSubmit()" [disabled]="!registerUserForm.valid">
+            Registrar
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
